@@ -8,8 +8,8 @@
 
 ## git 账号设置
 ```
-git config --global user.email "you@example.com" // 你注册的github邮箱
-git config --global user.name "Your Name" // 你注册的github name
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 ```
 
 ## 命令行翻墙
