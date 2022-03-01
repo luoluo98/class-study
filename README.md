@@ -12,7 +12,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-## 命令行翻墙
+## 命令行翻墙的命令
 `export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890`
 
 # makedown 语法入门
@@ -57,9 +57,8 @@ hello world
 * 文本引用
 > 文本引用
 
-* 表格
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+* 表格 表格语法有问题
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
