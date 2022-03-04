@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景图片</title>
+    <style>
+      div {
+        width: 1000px;
+        height: 500px;
+        background-color: pink;
+        /* 不要落下URL() */
+        background-image: url(images/logo背景.jpg);
+        /* 1.背景图片不平铺 */
+        /* background-repeat: no-repeat; */
+        /*2. 默认情况下背景图片是平铺的 */
+        /* background-repeat: repeat; */
+        /* 3.沿着x轴平铺 */
+        /* background-repeat: repeat-x; */
+        /* 4.沿着y轴平铺 */
+        background-repeat: repeat-y;
+        /* 页面元素既可以添加背景图片，也可以添加背景颜色，不过背景图片是前置的 */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

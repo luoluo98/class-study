@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>复合选择器练习</title>
+    <style>
+      /* 使用后代选择器 */
+      .nav ul li a {
+        color: red;
+      }
+      /* 子元素选择器 */
+      .hot > a {
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 后代选择器 -->
+    <div class="nav">
+      <ul>
+        <li><a href="#">baidu</a></li>
+        <li><a href="#">baidu</a></li>
+      </ul>
+    </div>
+    <!-- 子元素选择器 -->
+    <div class="hot">
+      <a href="#">大肘子</a>
+      <a href="#">大肘子2</a>
+      <ul>
+        <li><a href="#">猪头</a></li>
+        <li><a href="#">猪尾巴</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

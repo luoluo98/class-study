@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>id选择器</title>
+    <title>css复合选择器之子选择器</title>
     <style>
-      /* id 选择器口诀：样式#定义，结构id调用，只能调用一次，别人切勿使用。 */
-      #pink {
-        color: pink;
+      .nav > a {
+        color: blue;
       }
     </style>
   </head>
   <body>
-    <div id="pink">迈克尔·杰克逊</div>
-    <div id="pink">342342</div>
+    <div class="nav">
+      <a href="#">你是儿子</a>
+      <p>
+        <a href="#">你是孙子</a>
+      </p>
+    </div>
   </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css复合选择器之后代选择器</title>
+    <style>
+      /* 我想要把ol里面的小li选出来改为pink */
+      ol li {
+        color: pink;
+      }
+      ol li a {
+        color: red;
+      }
+      .nav li a {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>我是ol的孩子</li>
+      <li>我是ol的孩子</li>
+      <li>我是ol的孩子</li>
+      <li><a href="#">我是孙子</a></li>
+    </ol>
+    <ul>
+      <li>我是ul的孩子</li>
+      <li>我是ul的孩子</li>
+      <li>我是ul的孩子</li>
+    </ul>
+    <ul class="nav">
+      <li>我是ul的孩子</li>
+      <li>我是ul的孩子</li>
+      <li>我是ul的孩子</li>
+      <li><a href="#">不会变化的</a></li>
+      <li><a href="#">不会变化的</a></li>
+      <li><a href="#">不会变化的</a></li>
+      <li><a href="#">不会变化的</a></li>
+    </ul>
+  </body>
+</html>
