@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子边框练习</title>
+    <style>
+      /* 给一个200*200的盒子设置上边框为红色，其余边框为蓝色  注意层叠性--就近原则  先大后小（范围）*/
+      div {
+        width: 200px;
+        height: 200px;
+        /* bordr包含了四条边 */
+        border: 1px solid blue;
+        /* top只是层叠了上边框 */
+        border-top: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
