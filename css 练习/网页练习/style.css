@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+body {
+  background-color: #f3f5f7;
+  height: 3000px;
+}
+/*                                            1. 头部区域  header */
+.header {
+  height: 42px;
+  /* 注意此地方会层叠w里面的margin */
+  margin: 30px auto;
+}
+.logo {
+  float: left;
+  width: 198px;
+  height: 42px;
+}
+.nav {
+  float: left;
+  margin-left: 60px;
+}
+.nav ul li {
+  float: left;
+  margin: 0 15px;
+}
+.nav ul li a {
+  display: block;
+  height: 42px;
+  padding: 0 10px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #050505;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+.search {
+  float: left;
+  width: 412px;
+  height: 42px;
+  margin-left: 70px;
+}
+.search input {
+  float: left;
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  color: #bfbfbf;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  /* 按钮botton默认有边框需要手动去除 */
+  border: 0;
+  background: url(./img/button.png);
+}
+.user {
+  float: right;
+  line-height: 42px;
+  margin-left: 50px;
+  font-size: 16px;
+  color: #666;
+}
+/*                                          2.横幅模块区域   banner */
+.banner {
+  height: 421px;
+  background-color: #1c036f;
+}
+.banner .w {
+  height: 421px;
+  background: url(./img/banner2.png) no-repeat top center;
+}
+.subnav {
+  float: left;
+  width: 190px;
+  height: 421px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.subnav ul li {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+}
+.subnav ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.subnav ul li a:hover {
+  color: #00a4ff;
+}
+.subnav ul li a span {
+  float: right;
+}
+.course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+  /* 浮动的盒子不会有外边距合并的情况 */
+  margin-top: 50px;
+}
+.course h2 {
+  height: 48px;
+  background-color: #9bceea;
+  text-align: center;
+  line-height: 48px;
+  font-size: 18px;
+  color: #fff;
+}
+.course .bd {
+  padding: 0 20px;
+}
+.bd ul li {
+  padding: 14px 0;
+  border-bottom: 1px solid #a5a5a5;
+}
+.bd ul li h4 {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+.bd ul li p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.bd .more {
+  display: block;
+  height: 38px;
+  border: 1px solid #00a4ff;
+  text-align: center;
+  line-height: 38px;
+  font-size: 16px;
+  color: #00a4ff;
+  font-weight: 700;
+  margin-top: 5px;
+}
+/*                                     3.精品推荐小模块  goods */
+.goods {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  /* 行高会继承给h3  ul a  */
+  line-height: 60px;
+}
+.goods h3 {
+  float: left;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.goods ul {
+  float: left;
+  margin-left: 30px;
+}
+.goods ul li {
+  float: left;
+}
+.goods ul li a {
+  padding: 0 30px;
+  font-size: 16px;
+  color: #050505;
+  border-left: 1px solid #ccc;
+}
+.goods .mod {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+/*                                       4. 精品推荐大模块 box1 */
+.box1 {
+  margin-top: 30px;
+}
+.box1-hd {
+  height: 45px;
+}
+.box1-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+}
+.box1-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+/* 把li的父亲ul修改到足够宽，能够一行装下5个li */
+.box1-bd ul {
+  width: 1225px;
+}
+.box1-bd ul li {
+  /* 子绝父相 */
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+}
+.box1-bd ul li > img {
+  width: 100%;
+}
+.box1-bd ul li em {
+  position: absolute;
+  top: 4px;
+  right: -4px;
+}
+.box1-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.box1-bd .info {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
+}
+.box1-bd .info span {
+  color: #ff7c2d;
+}
+/*                                    5. 第五行  编程入门大模块 box2 */
+.box2 {
+  margin-top: 30px;
+}
+.box2-hd {
+  height: 45px;
+}
+.box2-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+}
+.box2-hd .remen ul {
+  float: left;
+  margin-left: 350px;
+}
+.box2-hd .remen ul li {
+  float: left;
+}
+.box2-hd .remen ul li a {
+  display: block;
+  padding: 0 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #999;
+}
+.box2-hd .remen ul li a:hover {
+  color: #00a4ff;
+}
+.box2-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+/*                          第五行下半部 */
+.box2-bd {
+  height: 392px;
+}
+.box2-bd .zuoce {
+  float: left;
+  width: 228px;
+  height: 392px;
+  background: url(./img/box2-bdleft.png) no-repeat left center;
+}
+.box2-bd .zuoce .zuoshang {
+  margin: 50px 30px;
+}
+.box2-bd .zuoce .zuoshang h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.box2-bd .zuoce .zuoxia {
+  margin: 0 30px;
+}
+.box2-bd .zuoce .zuoxia img {
+  float: left;
+  margin-right: 4px;
+}
+.box2-bd .zuoce .zuoxia p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.box2-bd .youce {
+  margin-left: 15px;
+}
+.box2-bd .youce img {
+  float: right;
+}
+.box2-bd .youce .youxia {
+  float: right;
+  margin-top: 22px;
+}
+.box2-bd .youce .youxia ul {
+  width: 972px;
+}
+.box2-bd .youce .youxia ul li {
+  float: left;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+.box2-bd .youce .youxia ul li img {
+  width: 100%;
+}
+.box2-bd .youce .youxia ul li h4 {
+  margin: 170px 20px 20px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #050505;
+}
+.box2-bd .youce .youxia .info {
+  margin: 0 20px 0 20px;
+  font-size: 12px;
+  color: #999;
+}
+.box2-bd .youce .youxia .info span {
+  color: #ff7c2d;
+}
+/*                                  6. 第六大行  数据分析师模块 box3  */
+
+.box3 {
+  margin-top: 30px;
+}
+.box3-hd {
+  height: 45px;
+}
+.box3-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+}
+.box3-hd .remen ul {
+  float: left;
+  margin-left: 350px;
+}
+.box3-hd .remen ul li {
+  float: left;
+}
+.box3-hd .remen ul li a {
+  display: block;
+  padding: 0 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #999;
+}
+.box3-hd .remen ul li a:hover {
+  color: #00a4ff;
+}
+.box3-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+/*                          第六行下半部 */
+.box3-bd {
+  height: 392px;
+}
+.box3-bd .zuoce {
+  float: left;
+  width: 228px;
+  height: 392px;
+  background: url(./img/box3-bdleft.png) no-repeat left center;
+}
+.box3-bd .zuoce .zuoshang {
+  margin: 50px 30px;
+}
+.box3-bd .zuoce .zuoshang h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.box3-bd .zuoce .zuoxia {
+  margin: 0 30px;
+}
+.box3-bd .zuoce .zuoxia img {
+  float: left;
+  margin-right: 4px;
+}
+.box3-bd .zuoce .zuoxia p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.box3-bd .youce {
+  margin-left: 15px;
+}
+.box3-bd .youce img {
+  float: right;
+}
+.box3-bd .youce .youxia {
+  float: right;
+  margin-top: 22px;
+}
+.box3-bd .youce .youxia ul {
+  width: 972px;
+}
+.box3-bd .youce .youxia ul li {
+  float: left;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+.box3-bd .youce .youxia ul li img {
+  width: 100%;
+}
+.box3-bd .youce .youxia ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #050505;
+}
+.box3-bd .youce .youxia .info {
+  margin: 0 20px 0 20px;
+  font-size: 12px;
+  color: #999;
+}
+.box3-bd .youce .youxia .info span {
+  color: #ff7c2d;
+}
+/*                         7. 第七大行  机器学习工程师模块   box4  */
+
+.box4 {
+  margin-top: 30px;
+}
+.box4-hd {
+  height: 45px;
+}
+.box4-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+}
+.box4-hd .remen ul {
+  float: left;
+  margin-left: 300px;
+}
+.box4-hd .remen ul li {
+  float: left;
+}
+.box4-hd .remen ul li a {
+  display: block;
+  padding: 0 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #999;
+}
+.box4-hd .remen ul li a:hover {
+  color: #00a4ff;
+}
+.box4-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+/*                      第七大行下半部 */
+.box4-bd ul {
+  width: 1225px;
+}
+.box4-bd ul li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+}
+.box4-bd ul li img {
+  width: 100%;
+}
+.box4-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.box4-bd .info {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
+}
+.box4-bd .info span {
+  color: #ff7c2d;
+}
+/*                                  8. 第八大行  前端开发工程师模块   box5 */
+.box5 {
+  margin-top: 30px;
+}
+.box5-hd {
+  height: 45px;
+}
+.box5-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+}
+.box5-hd .remen ul {
+  float: left;
+  margin-left: 300px;
+}
+.box5-hd .remen ul li {
+  float: left;
+}
+.box5-hd .remen ul li a {
+  display: block;
+  padding: 0 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #999;
+}
+.box5-hd .remen ul li a:hover {
+  color: #00a4ff;
+}
+.box5-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+/*                      第八大行下半部 */
+.box5-bd ul {
+  width: 1225px;
+}
+.box5-bd ul li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+}
+.box5-bd ul li img {
+  width: 100%;
+}
+.box5-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.box5-bd .info {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
+}
+.box5-bd .info span {
+  color: #ff7c2d;
+}
+/* 9. 第九大行 底部模块 footer  */
+.footer {
+  height: 415px;
+  background-color: #fff;
+}
+.footer .w {
+  padding-top: 35px;
+}
+.links {
+  float: right;
+}
+.copyright {
+  float: left;
+}
+.copyright p {
+  font-size: 12px;
+  color: #666;
+  margin: 20px 0 15px 0;
+}
+.copyright .app {
+  display: block;
+  width: 118px;
+  height: 33px;
+  border: 1px solid #00a4ff;
+  text-align: center;
+  line-height: 33px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.links {
+  float: right;
+}
+.links dl {
+  float: left;
+  margin-left: 100px;
+}
+.links dl dt {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.links dl dd a {
+  font-size: 12px;
+  color: #333;
+}

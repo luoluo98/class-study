@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定位---淘宝轮播图</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    .tb-promo {
+      position: relative;
+      /* 子绝父相 */
+      width: 632px;
+      height: 340px;
+      background-color: #fff;
+      margin: 100px auto;
+    }
+    /* 父盒子的宽度高度要和图片大小一致，或者确定图片大小与父盒子尺寸一致 */
+    .tb-promo img {
+      width: 632px;
+      height: 340px;
+    }
+    /* 并集选择器可以集体声明相同的样式 */
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 20px;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .prev {
+      left: 0;
+      /* 加了绝对定位的盒子可以直接设置高度和宽度，不用转换为块元素或者行内块元素 */
+      /* 圆角 */
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .next {
+      /* 如果一个盒子既有left属性，又有right属性，则会执行left属性。
+      同理，如果同时有top和bottom马泽辉执行top */
+      right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    .promo-nav {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      margin-left: -35px;
+      background: rgba(255, 255, 255, 0.7);
+      width: 70px;
+      height: 13px;
+      border-radius: 7px;
+    }
+    .promo-nav li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      background-color: black;
+      border-radius: 50%;
+      margin: 3px;
+    }
+    /* 注意权重，只写.selected 权重小于.promo-nav li */
+    .promo-nav .selected {
+      background-color: #ff5000;
+    }
+  </style>
+  <body>
+    <!-- 思路
+  1.大盒子类名：tb-promo，淘宝广告
+  2.放一张图片
+  3.左右按钮使用链接，左箭头prev，右箭头next
+  4.底部小圆点用ul，类名为：promo-nav -->
+    <div class="tb-promo">
+      <img src="./images/超大图片.jpg" alt="" />
+      <!-- 左侧箭头 -->
+      <a href="#" class="prev">&lt;</a>
+      <a href="#" class="next">&gt;</a>
+      <!-- 底部小圆点  -->
+      <ul class="promo-nav">
+        <li class="selected"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>
