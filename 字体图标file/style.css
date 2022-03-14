@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?25wrwy');
+  src:  url('fonts/icomoon.eot?25wrwy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?25wrwy') format('truetype'),
+    url('fonts/icomoon.woff?25wrwy') format('woff'),
+    url('fonts/icomoon.svg?25wrwy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-windows:before {
+  content: "\eac1";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-delicious:before {
+  content: "\eacd";
+}
+.icon-IE:before {
+  content: "\eadb";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-mic:before {
+  content: "\e91e";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-compass:before {
+  content: "\e949";
+}
