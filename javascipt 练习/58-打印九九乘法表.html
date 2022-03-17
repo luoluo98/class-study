@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 1.一共有九行，但是每行的个数不一样，因此需要用双重for循环
+      // 2.外层的for循环控制行数i，循环9次，可以打印9行
+      // 3.内层的for循环控制每行公式j
+      // 4.核心算法：每一行 公式的个数正好和行数一样，j<=i
+      // 5.每打印完毕一行，需要重新换一行
+      var star = "";
+      for (var i = 1; i <= 9; i++) {
+        //外层控制行数
+        for (var j = 1; j <= i; j++) {
+          //里层循环控制每一行的个数j <=i
+          // 1 X 2 = 2
+          star += j + "x" + i + "=" + i * j + "\t";
+        }
+        star += "\n";
+      }
+      console.log(star);
+    </script>
+  </head>
+  <body></body>
+</html>

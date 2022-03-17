@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 立即跳出本次循环，继续下一次循环.本次循环中 continue 之后的代码就会少执行一次
+      for (var i = 1; i <= 5; i++) {
+        if (i == 3) {
+          continue;
+        }
+        console.log("我正在吃第" + i + "个包子");
+      }
+      // 1.求1~100之间，除了能被7整除之外的整数和
+      var sum = 0;
+      for (var i = 1; i <= 100; i++) {
+        if (i % 7 == 0) {
+          continue;
+        }
+        sum += i;
+      }
+      console.log(sum);
+    </script>
+  </head>
+  <body></body>
+</html>

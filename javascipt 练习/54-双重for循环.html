@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 双重for循环 语法结构
+      // for (外层的初识变化量; 外层的条件表达式; 外层的操作表达式) {
+      //   for (里层的初识变化量; 里层的条件表达式; 里层的操作表达式) {
+      //     执行语句;
+      //   }
+      // }
+      // 1.可以把里面的循环看做是外层循环的语句
+      // 2.外层循环 循环1次，里面的循环就要执行全部
+      for (var i = 1; i <= 3; i++) {
+        console.log("这是外层循环第" + i + "次");
+        for (var j = 1; j <= 3; j++) {
+          console.log("这是里层的循环第" + j + "次");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

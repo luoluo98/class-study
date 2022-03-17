@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 1.方法一：修改length长度
+      var arr = ["red", "green", "blue"];
+      console.log(arr.length); //3
+      arr.length = 5; //把length长度修改为了5，数组里面的元素应该有5个
+      console.log(arr);
+      console.log(arr[3]); //undefined
+      console.log(arr[4]); //undefined
+
+      // 2.方法二：修改索引号,追加数组元素
+      var arr1 = ["red", "green", "blue"];
+      arr1[3] = "pink";
+      console.log(arr1);
+      arr1[4] = "purple";
+      console.log(arr1);
+      arr1[0] = "yellow"; //这里是替换原来的数组元素
+      console.log(arr1);
+      // arr1 = "有点意思";不要直接给数组名赋值，否则里面的数组元素都没有了
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 1.弹出prompt输入框，让用户输入水果名称，把这个值取过来保存到变量中
+      // 2.将这个变量作为switch括号里面的表达式
+      // 3.case后面的值写几个不同水果的名称,注意一定要加引号,因为必须是全等匹配
+      // 4.弹出不同的价格,同样注意每个case后面加上break,以便于退出switch语句
+      // 5.将default设置为:没有此水果
+      var fruit = prompt("请输入查询的水果");
+      switch (fruit) {
+        case "苹果":
+          alert("苹果的价格是3.5元/斤");
+          break;
+        case "榴莲":
+          alert("榴莲的价格是40元/斤");
+          break;
+        default:
+          alert("没有此水果");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

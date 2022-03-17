@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 1. 新建一个数组，里面存放10个整数1~10
+      // 1.1使用循环来追加数组
+      // 1.2声明一个空数组arr
+      // 1.3循环中的计数器i可以作为数组元素存入
+      // 1.4由于数组元素索引号是从0开始，因此计数器从0开始更合适，存入的数组元素要+1
+
+      var arr = [];
+      for (var i = 0; i < 10; i++) {
+        // arr = i;不要直接给数组名赋值，赋值会被覆盖原来的数据
+        arr[i] = i + 1;
+      }
+      console.log(arr);
+    </script>
+  </head>
+  <body></body>
+</html>
