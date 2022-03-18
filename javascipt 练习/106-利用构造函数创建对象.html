@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 语法规范
+      // function 构造函数名() {
+      //   this.属性 = 值;
+      //   this.方法 = function () {};
+      // }
+      // new 构造函数名();
+
+      function Star(uname, age, sex) {
+        this.name = uname;
+        this.age = age;
+        this.sex = sex;
+        this.sing = function (sing) {
+          console.log(sing);
+        };
+      }
+      var ldh = new Star("刘德华", 18, "男");
+      // console.log(typeof ldh);//调用函数返回的是一个对象
+      console.log(ldh.name);
+      console.log(ldh.sex);
+      ldh.sing("冰雨");
+
+      var zxy = new Star("张学友", 20, "男");
+      console.log(zxy.name);
+      zxy.sing("李香兰");
+    </script>
+  </head>
+  <body></body>
+</html>

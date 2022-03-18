@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var obj = new Object();
+      obj.name = "鸣人";
+      obj.age = 19;
+      obj.sex = "男";
+      obj.skill = function () {
+        console.log("影分身术");
+      };
+
+      // 1.利用等号 = 赋值的方法添加对象的属性和方法
+      // 2.每个属性和方法中间用英文分号隔开
+      console.log(obj.name);
+      console.log(obj["sex"]);
+      obj.skill();
+    </script>
+  </head>
+  <body></body>
+</html>
