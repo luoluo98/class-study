@@ -9,9 +9,9 @@
       // 只有函数才有arguments对象   而且是每个函数都内置好了这个arguments
 
       function fn() {
-        // console.log(arguments); //里面存储了所有传递过来的实参
-        // console.log(arguments.length); //3。具有 length 属性
-        // console.log(arguments[2]); //3。按索引方式存储数据
+        console.log(arguments); //里面存储了所有传递过来的实参
+        console.log(arguments.length); //3。具有 length 属性
+        console.log(arguments[2]); //3。按索引方式存储数据
         // 可以按照数组的方式遍历arguments
         for (var i = 0; i < arguments.length; i++) {
           console.log(arguments[i]);

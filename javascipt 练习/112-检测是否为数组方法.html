@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 翻转数组
+      function reverse(arr) {
+        if (arr instanceof Array) {
+          var newArr = [];
+          for (var i = arr.length; i >= 0; i--) {
+            newArr[newArr.length] = arr[i];
+          }
+          return newArr;
+        } else {
+          return "error 这个参数要求是数组格式[1,2,3]";
+        }
+      }
+      console.log(reverse([1, 2, 3]));
+      console.log(reverse(1, 2, 3));
+
+      // 检测是否为数组方法1
+      var arr = [];
+      var obj = {};
+      console.log(arr instanceof Array); //true
+      console.log(obj instanceof Array); //false
+
+      // 方法2
+      console.log(Array.isArray(arr)); //true
+      console.log(Array.isArray(obj)); //false
+    </script>
+  </head>
+  <body></body>
+</html>
